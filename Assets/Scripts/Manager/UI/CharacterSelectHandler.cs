@@ -28,6 +28,8 @@ public class CharacterSelectHandler : MonoBehaviour
     private Transform selectText;
     [SerializeField]
     private Transform centerLoadingImg;
+    [SerializeField]
+    private Text escText;
 
     private Sequence gameStartSeq;
 
@@ -107,6 +109,7 @@ public class CharacterSelectHandler : MonoBehaviour
 
         gameStartSeq = DOTween.Sequence()
             .Append(selectText.DOLocalMoveY(650f, 0.3f))
+            .Join(escText.DOFade(0f, 0.5f))
             .AppendInterval(1f)
             .Append(centerLoadingImg.DOLocalMoveY(0f, 1.5f))
             .AppendInterval(0.5f)

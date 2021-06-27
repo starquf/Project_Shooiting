@@ -1126,7 +1126,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 45f6e85bbf7add641b0daf327c340dc4, type: 3}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -3811,6 +3811,7 @@ MonoBehaviour:
   selectTrans: {fileID: 1278531681}
   selectText: {fileID: 1690303715}
   centerLoadingImg: {fileID: 537986793}
+  escText: {fileID: 2078453779}
 --- !u!114 &1130197208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4160,7 +4161,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 45f6e85bbf7add641b0daf327c340dc4, type: 3}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -7232,7 +7233,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 45f6e85bbf7add641b0daf327c340dc4, type: 3}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -7316,7 +7317,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 45f6e85bbf7add641b0daf327c340dc4, type: 3}
-    m_FontSize: 90
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
