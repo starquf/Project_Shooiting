@@ -143,6 +143,11 @@ public class MainUIHandler : MonoBehaviour
                 canSelect = false;
                 rankingHandler.StartSelect();
                 break;
+
+            case 3:
+
+                Application.Quit();
+                break;
         }
     }
 

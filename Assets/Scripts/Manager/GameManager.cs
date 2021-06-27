@@ -95,7 +95,6 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnGameClear;
 
     public PlayerType playerType = PlayerType.Tech;
-
     public RankBoard rankBoard;
 
     private void GetRankingBoard()
@@ -127,7 +126,7 @@ public class GameManager : MonoBehaviour
         DOTween.KillAll();
         ResetValue();
 
-        SceneManager.LoadScene("InGame");
+        StartCoroutine(LoadSceneWait("InGame"));
     }
 
     public void LoadMainScene()
@@ -135,7 +134,26 @@ public class GameManager : MonoBehaviour
         DOTween.KillAll();
         ResetValue();
 
-        SceneManager.LoadScene("Main");
+        StartCoroutine(LoadSceneWait("Main"));
+    }
+
+    private IEnumerator LoadSceneWait(string sceneName)
+    {
+        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
+        op.allowSceneActivation = false;
+
+        while (!op.isDone)
+        {
+            yield return null;
+
+            if (op.progress >= 0.9f)
+            {
+                yield return new WaitForSeconds(1f);
+
+                op.allowSceneActivation = true;
+                yield break;
+            }
+        }
     }
 
     private void ResetValue()
