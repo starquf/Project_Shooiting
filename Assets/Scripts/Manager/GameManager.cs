@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour
             {
                 yield return new WaitForSeconds(1f);
 
+                DOTween.KillAll();
                 op.allowSceneActivation = true;
                 yield break;
             }

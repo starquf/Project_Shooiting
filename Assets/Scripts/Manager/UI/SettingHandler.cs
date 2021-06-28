@@ -68,7 +68,6 @@ public class SettingHandler : MonoBehaviour
 
         HighlightSelect();
         GetSettingInfo();
-        
     }
 
     private void Update()

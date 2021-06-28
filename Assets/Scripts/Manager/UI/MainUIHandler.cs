@@ -31,6 +31,8 @@ public class MainUIHandler : MonoBehaviour
     private RankingBoardHandler rankingHandler = null;
     [SerializeField]
     private SettingHandler settingHandler = null;
+    [SerializeField]
+    private CreditHandler creditHandler = null;
 
     [Space(10f)]
     [SerializeField]
@@ -145,6 +147,12 @@ public class MainUIHandler : MonoBehaviour
                 break;
 
             case 3:
+
+                canSelect = false;
+                creditHandler.StartSelect();
+                break;
+
+            case 4:
 
                 Application.Quit();
                 break;

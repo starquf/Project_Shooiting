@@ -132,7 +132,9 @@ public class PauseMenuHandler : MonoBehaviour
 
                     is_Yes = true;
                     yesText.color = Color.white;
+                    yesText.fontStyle = FontStyle.Bold;
                     noText.color = nonHighlighted_Color;
+                    noText.fontStyle = FontStyle.Normal;
 
                     oneMorePanel.SetActive(true);
 
@@ -144,7 +146,9 @@ public class PauseMenuHandler : MonoBehaviour
 
                     is_Yes = true;
                     yesText.color = Color.white;
+                    yesText.fontStyle = FontStyle.Bold;
                     noText.color = nonHighlighted_Color;
+                    noText.fontStyle = FontStyle.Normal;
 
                     oneMorePanel.SetActive(true);
 
@@ -159,6 +163,8 @@ public class PauseMenuHandler : MonoBehaviour
         {
             if (is_Yes)
             {
+                canSelect = false;
+
                 switch (currentMenuIdx)
                 {
                     case 1:
@@ -200,15 +206,19 @@ public class PauseMenuHandler : MonoBehaviour
             is_Yes = true;
 
             yesText.color = Color.white;
+            yesText.fontStyle = FontStyle.Bold;
             noText.color = nonHighlighted_Color;
+            noText.fontStyle = FontStyle.Normal;
         }
 
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             is_Yes = false;
 
-            yesText.color = nonHighlighted_Color;
-            noText.color = Color.white; 
+            yesText.color = nonHighlighted_Color; 
+            yesText.fontStyle = FontStyle.Normal;
+            noText.color = Color.white;
+            noText.fontStyle = FontStyle.Bold; 
         }
     }
 
