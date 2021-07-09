@@ -44,6 +44,7 @@ public class GameOverHandler : MonoBehaviour
     {
         if (isOver && Input.GetKeyDown(KeyCode.Return))
         {
+            isOver = false;
             PoolManager.Instance.ResetPool();
             GameManager.Instance.LoadMainScene();
         }
