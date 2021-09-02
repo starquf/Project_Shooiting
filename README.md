@@ -1,6 +1,6 @@
 # Project_Shooting
 
-게임 [영상링크](https://www.youtube.com/watch?v=CpcIrIVJCRc&t=1s)
+게임 [영상링크](https://www.youtube.com/watch?v=CpcIrIVJCRc&t=1s) 참고
 
 ## 1. 게임 설명
 >동방 프로젝트의 시스템을 참고하여 유니티로 만든 탄막 슈팅게임입니다.
